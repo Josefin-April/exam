@@ -3,12 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/heart-icon.png">
     <title>Examone</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="normalize" href="styles/normalize.css">
     <script src="https://kit.fontawesome.com/fb2026e487.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
+    <!--FIRST SECTION-->
+    <section class="section_one--container">
+        <div class="section_one--paragraph">
+            <h1 class="section_one--heading">BHROMAON</h1>
+            <p class="section_one--paragraph">Safe Travel Anywhere</p>
+
+            <form class="section_one--contact__form">
+                <label class="label__element" for="name"></label>
+                <input class="input__element"
+                    type="text"
+                    name="name"
+                    id="name" 
+                    required
+                    placeholder="Search Your Travel Destination">
+                    <button class="section_one--button" type="submit">Search
+                        <span><i class="fas fa-search"></i></span></button>
+            </form>
+            <p class="section_one--scroll">Scroll Down</p>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <nav class="topnav" id="myTopnav">
+        <div class="topnav_text--container">
+            <p class="topnav_text">BHROMAON</p>
+        </div>
+        <a href="#Work" class="active">Who we are</a>
+        <a href="#Services">What we do</a>
+        <a href="#Contact">Travel with us</a>
+        <a href="#Contact">Contact us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-ellipsis-h"></i>
+        </a>
+    </nav>
+
+    <section class="section_two--container">
+      <div class="section_two--left">
+          <h2 class="section_two--heading">Why Choose Us</h2>
+          <p class="section_two--paragraph">Tion and dislike men who are so beguiled and demoralized by desire by the 
+              charms of pleasure of the moment, so blinded by desire, that they cannot foresee 
+            <br>  
+            <br>
+              Ddislike men who are so beguiled and demoralized by the charms of pleasure of the 
+              moment, so blinded by desire, that.</p>
+          <button class="section_two--button">Explore Places</button>
+      </div>
+      <div class="section_two--right">
+          <img src="images/house.svg" alt="house">
+          <img src="images/forest.svg" alt="forest">
+      </div>
+    </section>
+    <section>
+        <img src="images/How It Works.svg" alt="image">
+    </section>
+
+    <section class="section_three">
+        <img src="images/section3.svg" alt="image">
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
